@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/lemonmilk?styles=18119,18123">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>DORSHEMESH</title>
+</head>
+<body>
+
+    <nav>
+        <span class="nav-brand">
+          <% if (page_name === 'contact') { %>
+            <a class="active" href="/">DORSHEMESH</a>
+          <% } else if (page_name === 'about') { %>
+            <a class="active-about" href="/">DORSHEMESH</a>
+          <% } else { %>
+            <a href="/">DORSHEMESH</a>
+          <% } %>
+            
+        </span>
+        
+        <span class="nav-right">
+        <ul>
+
+          <% if (page_name === 'home') { %>
+            <style>
+              a{color:black;}
+            </style>
+          <% }else if (page_name === 'about') { %>
+            <style>
+              ul, li{
+                & a:hover{color: #8121d8;}
+              }
+            </style>
+            <% } %>
+          
+
+            <li><a class="<%= page_name === 'about' && 'active-about' %>" href="/about">ABOUT</a></li>
+
+            <li><a class="<%= page_name === 'home' && 'active' %>" href="/">WORKS</a></li>
+
+            <li><a class="<%= page_name === 'contact' && 'active' %>" href="/contact">CONTACT</a></li>
+
+        </ul>
+
+        </span>
+        
+    </nav>
+    

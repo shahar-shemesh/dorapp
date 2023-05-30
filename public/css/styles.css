@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'LEMON MILK Pro FTR';
+    src: url('./fonts/LEMONMILKProFTR-UltraLight.woff2') format('woff2'),
+        url('./fonts/LEMONMILKProFTR-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'LEMON MILK Pro FTR';
+    width: 99%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.black{
+    color: #fff;
+}
+
+.active{
+    color: #21d881;
+}
+
+.active-about{
+    color: #8121d8;
+}
+
+nav{
+    width: 90%;
+    display: inline-block;
+    padding: 50px;
+    background-color: transparent;
+}
+
+.nav-brand{
+    font-family: 'lemon/milk light';
+    float: left;
+    text-decoration: none;
+}
+
+.nav-right{
+    font-family: 'Lemon/Milk', sans-serif;
+    float: right;
+}
+
+ul, li{
+    display: inline;
+    padding-left: 6px;
+    text-decoration: none;
+    & a:hover{color: #21d881;}
+}
+
+.about-me{
+    float: left;
+}
+
+.square{
+    margin-top: 4rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: #8121d8;
+}
+
+.title{
+    display: block;
+    
+}
+
+.contact-content{
+    margin-top: 4rem;
+    color: white;
+    display: inline-block;
+    width: auto;
+    font-family: 'LEMON MILK Pro FTR';
+    & a{
+        display: block;
+        padding: 0;
+        width: auto;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+}
+
+
+
+.p-arc{
+    position: absolute;
+        left: -3rem;
+        top: 7rem;
+}
+
+.arc {
+    z-index: -1;
+    position: absolute;
+    border: 15px solid #21d881;
+    border-radius: 50%;
+    height: 40rem;
+    width: 40rem;
+    border-top-color: transparent;
+    transform: rotate(85deg);
+    
+}
+
+.contact-body{
+    overflow: hidden;
+}
