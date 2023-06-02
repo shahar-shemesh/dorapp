@@ -112,3 +112,29 @@ ul, li{
 .contact-body{
     overflow: hidden;
 }
+
+@media (max-width: 1028px){ /*  if (screenUser < 1028px):  */
+    nav {
+        display: block;
+    }
+
+    span{
+        display: block;
+    }
+    li, ul{
+        display: block;
+    }
+
+    .nav-brand {
+        float: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+    .nav-right {
+        list-style-type: none;
+        float: none;
+        /* display: block; */
+    }
+}
