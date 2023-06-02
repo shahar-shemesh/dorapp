@@ -112,10 +112,10 @@ li {
 
 }
 
-/* 
+
 .contact-body{
-    overflow: hidden;
-} */
+    text-align: center;
+}
 
 
 
@@ -212,6 +212,10 @@ li {
         text-align: center;
     }
 
+    .p-arc, .arc{
+        overflow: hidden;
+    }
+
     .nav-wrap{
         display: block;
     }
@@ -261,6 +265,17 @@ li {
 
     .intro{
         font-weight:normal;
+    }
+
+
+    /* conact */
+
+    .contact-body{
+        text-align: center;
+
+    }
+    .contact-li{
+        font-size: 2rem;
     }
 
 }
