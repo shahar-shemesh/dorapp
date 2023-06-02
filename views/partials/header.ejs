@@ -14,52 +14,50 @@
 
 <body>
 
-  <div class="container-fluid">
-    <nav>
-      <span class="nav-brand">
-        <% if (page_name==='contact' ) { %>
-          <a class="active" href="/">DORSHEMESH</a>
-          <% } else if (page_name==='about' ) { %>
-            <a class="active-about" href="/">DORSHEMESH</a>
-            <% } else { %>
-              <a href="/">DORSHEMESH</a>
-              <% } %>
+  <div class="container">
+    <div class="nav-wrap">
+      <nav>
+        <span class="nav-brand">
+          <% if (page_name==='contact' ) { %>
+            <a class="active" href="/">DORSHEMESH</a>
+            <% } else if (page_name==='about' ) { %>
+              <a class="active-about" href="/">DORSHEMESH</a>
+              <% } else { %>
+                <a href="/">DORSHEMESH</a>
+                <% } %>
 
-      </span>
+        </span>
 
-      <span class="nav-right">
-        <ul col-sm-12>
+        <span class="nav-right">
+          <ul col-sm-12>
 
-          <% if (page_name==='home' ) { %>
-            <style>
-              a {
-                color: black;
-              }
-            </style>
-            <% }else if (page_name==='about' ) { %>
+            <% if (page_name==='home' || page_name=== "newpost" ) { %>
               <style>
-                ul,
-                li {
-                  & a:hover {
-                    color: #8121d8;
-                  }
+                a {
+                  color: black;
                 }
               </style>
-              <% } %>
+              <% }else if (page_name==='about' ) { %>
+                <style>
+                  ul,
+                  li {
+                    & a:hover {
+                      color: #8121d8;
+                    }
+                  }
+                </style>
+                <% } %>
 
 
-                <li><a class="<%= page_name === 'about' && 'active-about' %>" href="/about">ABOUT</a></li>
+                  <li><a class="<%= page_name === 'about' && 'active-about' %>" href="/about">ABOUT</a></li>
 
-                <li><a class="<%= page_name === 'home' && 'active' %>" href="/">WORKS</a></li>
+                  <li><a class="<%= page_name === 'home' && 'active' %>" href="/">WORKS</a></li>
 
-                <li><a class="<%= page_name === 'contact' && 'active' %>" href="/contact">CONTACT</a></li>
+                  <li><a class="<%= page_name === 'contact' && 'active' %>" href="/contact">CONTACT</a></li>
 
-        </ul>
+          </ul>
 
-      </span>
+        </span>
 
-    </nav>
-
-
-
-  
+      </nav>
+    </div>

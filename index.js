@@ -49,11 +49,11 @@ app.get("/contact", function(req, res){
   res.render('contact', {page_name: "contact" ,content: contactContent});
 });
 
-app.get("/compose", function(req, res){
-  res.render('compose');
+app.get("/newpost", function(req, res){
+  res.render('newpost', {page_name: "newpost" ,content: contactContent});
 });
 
-app.post("/compose", function(req, res){
+app.post("/newpost", function(req, res){
   const post = {
     title: req.body.postTitle,
     content: req.body.postText
